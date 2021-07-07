@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003D63"
+    tools:context=".MainActivity" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="730dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="351dp"
+                    android:layout_height="207dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.448"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.112"
+                    app:srcCompat="@drawable/lucy_logo" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="339dp"
+                    android:layout_height="330dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    app:cardBackgroundColor="#002E4A"
+                    app:cardElevation="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2">>
+
+                    <LinearLayout
+                        android:layout_width="330dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:gravity="center"
+                        android:orientation="vertical"><![CDATA[>
+
+                            ]]>
+
+                        <EditText
+                            android:id="@+id/emailBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/textbox"
+                            android:drawableLeft="@drawable/ic_outline_email_24"
+                            android:ems="10"
+                            android:hint="Enter your email"
+                            android:inputType="textEmailAddress"
+                            android:padding="10dp"
+                            android:textColor="#000000"
+                            android:textColorHint="#A15858" />
+
+                        <EditText
+                            android:id="@+id/passBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/textbox"
+                            android:drawableLeft="@drawable/ic_outline_lock_open_24"
+                            android:ems="10"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:padding="10dp"
+                            android:textColor="#000000"
+                            android:textColorHint="#A15858" />
+
+                        <Button
+                            android:id="@+id/forgotPasswordButton"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="15dp"
+                            android:background="@android:color/transparent"
+                            android:gravity="right|center_vertical"
+                            android:text="Forgot password?"
+                            android:textColor="#FFFFFF" />
+
+                        <Button
+                            android:id="@+id/submit"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/button"
+                            android:text="LOGIN"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/loginBack"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/button"
+                            android:text="Create New Account"
+                            android:textColor="#FDFDFD"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

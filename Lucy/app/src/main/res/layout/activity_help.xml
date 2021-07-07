@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003D63"
+    tools:context=".HelpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/helpAssistanceTXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bottom_nav_design"
+                android:padding="10dp"
+                android:text="HELP ASSISTANCE"
+                android:textColor="#000000"
+                android:textSize="38dp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="#002E4A">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/queryTXT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/button"
+                            android:ems="10"
+                            android:hint="Enter your query !"
+                            android:inputType="textPersonName"
+                            android:padding="10dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFD600"
+                            android:textSize="24sp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/askBTN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bottom_nav_design"
+                        android:elevation="5dp"
+                        android:text="ASK !"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Contact:"
+                        android:textColor="#FBFBFB"
+                        android:textSize="34sp" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawableLeft="@drawable/ic_outline_email_24"
+                        android:drawablePadding="10dp"
+                        android:text="animalhelp@lucy.co.in"
+                        android:textColor="#FFD600"
+                        android:textSize="24sp"
+                        app:drawableTint="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawableLeft="@drawable/ic_outline_phone_android_24"
+                        android:drawablePadding="10dp"
+                        android:text="+91 - 9167136030"
+                        android:textColor="#FFD600"
+                        android:textSize="24sp"
+                        app:drawableTint="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawableLeft="@drawable/ic_outline_local_phone_24"
+                        android:drawablePadding="10dp"
+                        android:text="(0251) 2202120"
+                        android:textColor="#FFD600"
+                        android:textSize="24sp"
+                        app:drawableTint="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawableLeft="@drawable/ic_outline_home_work_24"
+                        android:drawablePadding="10dp"
+                        android:text="B/4, 2nd floor, Aricia Altis, Agra Road, Kalyan(W), Dist. Thane, Maharashtra."
+                        android:textColor="#FFD600"
+                        android:textSize="24sp"
+                        app:drawableTint="#FFFFFF" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
